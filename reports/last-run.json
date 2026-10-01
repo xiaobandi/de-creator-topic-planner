@@ -1,7 +1,7 @@
 {
   "repo": "de-creator-topic-planner",
   "kind": "employee",
-  "run_at": "2026-09-30T23:54:15+08:00",
+  "run_at": "2026-10-01T10:18:53+08:00",
   "cases": 193,
   "passed": 193,
   "failed": 0,
@@ -32,5 +32,14 @@
     }
   },
   "skipped": [],
-  "failures": []
+  "failures": [],
+  "suites_run": [
+    "structure",
+    "contract",
+    "scenario",
+    "script",
+    "doc",
+    "compliance"
+  ],
+  "full": true
 }
