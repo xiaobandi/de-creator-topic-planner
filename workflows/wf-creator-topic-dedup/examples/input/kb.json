@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "created": "2026-09-29",
+    "updated": "2026-09-29"
+  },
+  "items": [
+    {
+      "title": "通勤保温杯实测",
+      "tags": [
+        "产品",
+        "测评"
+      ],
+      "weight": 3,
+      "note": "",
+      "created": "2026-09-29",
+      "used_count": 0
+    },
+    {
+      "title": "办公室喝热水指南",
+      "tags": [
+        "场景",
+        "科普"
+      ],
+      "weight": 2,
+      "note": "",
+      "created": "2026-09-29",
+      "used_count": 0
+    },
+    {
+      "title": "保温原理 3 秒讲清",
+      "tags": [
+        "科普"
+      ],
+      "weight": 1,
+      "note": "",
+      "created": "2026-09-29",
+      "used_count": 0
+    }
+  ]
+}

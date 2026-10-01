@@ -1,0 +1,97 @@
+apiVersion: digital-employee/v1
+kind: DigitalEmployee
+metadata:
+  id: de_creator_topic_planner
+  name: 爆款选题策划师
+  alias: null
+  repo: de-creator-topic-planner
+  card_no: 5.4-1
+  group: creator
+  group_label: 自媒体从业者
+  phase: P0 首发
+  complexity: S-M：WF1/WF4 需热榜连接器（M），其余纯提示词（S），总估 8-12 人日
+  score: 23
+  price: ¥30-80/月；采纳"基础版免费开源 + 知识库高级版付费"双层策略（据 R5 调研）
+  channels:
+  - GitHub（必备基础渠道，开源免费版引流）
+  - 小红书
+  - 抖音
+  - Coze扣子商店
+  - 腾讯WorkBuddy Skill市场
+  license: Proprietary
+  version: 1.0.0
+spec:
+  positioning: 每天早会前 5 分钟交付"今日选题包"的选题合伙人
+  users: 全体内容创作者（5000 万+，据 R2 调研），尤其日更压力的短视频/图文作者
+  boundary: 做：热点聚合、选题生成、选题查重、爆款归因；不做：成稿写作（交给智能体 2）、数据复盘深度分析（交给智能体 6）、不承诺"必爆"
+  kpi: 选题包采纳率 ≥40%；每日选题耗时从 1h 压缩至 ≤10 分钟；选题库月净增 ≥30 条
+  roi_summary: 月省工时约 36h，折 ¥900-1400，对比订阅成本 ROI >10 倍
+  demand_refs:
+  - D01
+  - D28
+  - D12
+  demand_support: 充分
+  demand_evidence: 中
+runtime:
+  system_prompt: persona/system-prompt.md
+  boundary: persona/boundary.md
+  kpi: persona/kpi.md
+deliverables:
+  skills:
+  - slug: competitor-content-monitor
+    name: 竞品内容监控
+    kind: private
+    path: skills/competitor-content-monitor
+    version: 1.0.0
+    maturity: contract-complete
+  - slug: trendboard-fetcher
+    name: 热点榜抓取
+    kind: private
+    path: skills/trendboard-fetcher
+    version: 1.0.0
+    maturity: contract-complete
+  workflows:
+  - slug: wf-creator-topic-hot-aggregate
+    name: 热点聚合扫描
+    path: workflows/wf-creator-topic-hot-aggregate
+    version: 1.0.0
+    phase: P0
+    calls:
+    - trendboard-fetcher
+    - competitor-content-monitor
+  - slug: wf-creator-topic-dedup
+    name: 选题库去重匹配
+    path: workflows/wf-creator-topic-dedup
+    version: 1.0.0
+    phase: P0
+    calls:
+    - topic-duplicate-check
+    - topic-kb-manage
+  - slug: wf-creator-topic-pack
+    name: 选题包生成
+    path: workflows/wf-creator-topic-pack
+    version: 1.0.0
+    phase: P0
+    calls:
+    - title-generator
+    - viral-structure-analysis
+  - slug: wf-creator-topic-weekly-review
+    name: 每周选题复盘
+    path: workflows/wf-creator-topic-weekly-review
+    version: 1.0.0
+    phase: P1
+    calls:
+    - viral-structure-analysis
+    - topic-kb-manage
+  knowledge_base: kb/
+  connectors: connectors/bindings.yaml
+external_dependencies:
+- repo: agent-skills-core
+  version: 1.0.0
+  skills:
+  - title-generator
+  - topic-duplicate-check
+  - topic-kb-manage
+  - viral-structure-analysis
+  resolution: external
+spec_only_dependencies: []

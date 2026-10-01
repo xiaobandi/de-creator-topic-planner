@@ -1,0 +1,27 @@
+repo: de-creator-topic-planner
+core:
+  repo: agent-skills-core
+  version: 1.0.0
+  tag: v1.0.0
+dependencies:
+- skill: title-generator
+  name: 标题生成
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: topic-duplicate-check
+  name: 选题查重
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: topic-kb-manage
+  name: 选题知识库管理
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: viral-structure-analysis
+  name: 爆款结构分析
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+resolution_rule: 员工仓库对 core 只做 external_dependency 引用，不内联复制 SKILL.md 正文

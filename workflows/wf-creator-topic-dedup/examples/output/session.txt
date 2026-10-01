@@ -1,0 +1,16 @@
+$ python3 ../../tools/kb_manage.py --db examples/input/kb.json add --title '通勤保温杯实测' --tags '产品,测评' --weight 3
+  已存在同名条目：通勤保温杯实测（用 update 修改）
+  ↑ 原子技能 topic-kb-manage 的确定性脚本
+$ python3 ../../tools/kb_manage.py --db examples/input/kb.json add --title '办公室喝热水指南' --tags '场景,科普' --weight 2
+  已存在同名条目：办公室喝热水指南（用 update 修改）
+  ↑ 原子技能 topic-kb-manage 的确定性脚本
+$ python3 ../../tools/kb_manage.py --db examples/input/kb.json add --title '保温原理 3 秒讲清' --tags '科普' --weight 1
+  已存在同名条目：保温原理 3 秒讲清（用 update 修改）
+  ↑ 原子技能 topic-kb-manage 的确定性脚本
+$ python3 ../../tools/kb_manage.py --db examples/input/kb.json list --top 5
+  [权重3] 通勤保温杯实测  #产品,测评  用过0次
+  [权重2] 办公室喝热水指南  #场景,科普  用过0次
+  [权重1] 保温原理 3 秒讲清  #科普  用过0次
+  
+  共 3 / 3 条
+  ↑ 原子技能 topic-kb-manage 的确定性脚本
