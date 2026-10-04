@@ -1,0 +1,15 @@
+{
+  "name": "trendboard-fetcher",
+  "title": "热点榜抓取",
+  "kind": "skill",
+  "owner": "de-creator-topic-planner",
+  "complexity": "M",
+  "phase": "P0",
+  "one_liner": "聚合各平台热榜/热搜为结构化候选池（平台清单→当日热点条目（标题/热度/赛道标签））",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

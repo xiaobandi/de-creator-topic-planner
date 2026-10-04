@@ -1,0 +1,15 @@
+{
+  "name": "wf-creator-topic-pack",
+  "title": "选题包生成",
+  "kind": "workflow",
+  "owner": "de-creator-topic-planner",
+  "complexity": "S",
+  "phase": "P0",
+  "one_liner": "候选→10 选题×角度×标题×预估受众→推送用户确认",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

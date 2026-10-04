@@ -1,0 +1,15 @@
+{
+  "name": "wf-creator-topic-dedup",
+  "title": "选题库去重匹配",
+  "kind": "workflow",
+  "owner": "de-creator-topic-planner",
+  "complexity": "S",
+  "phase": "P0",
+  "one_liner": "候选池比对个人历史选题库→剔除/标注重复→剩余排序",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}
