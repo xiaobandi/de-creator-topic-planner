@@ -18,7 +18,7 @@ metadata:
   - 抖音
   - Coze扣子商店
   - 腾讯WorkBuddy Skill市场
-  license: Proprietary
+  license: Apache-2.0
   version: 1.0.0
 spec:
   positioning: 每天早会前 5 分钟交付"今日选题包"的选题合伙人

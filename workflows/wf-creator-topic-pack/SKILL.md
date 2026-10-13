@@ -3,7 +3,7 @@ name: wf-creator-topic-pack
 description: >-
   爆款选题策划师 的「选题包生成」工作流：候选→10 选题×角度×标题×预估受众→推送用户确认。触发方式：事件（WF2 后自动，每日 08:00 前交付）。
   当用户要完成「选题包生成」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

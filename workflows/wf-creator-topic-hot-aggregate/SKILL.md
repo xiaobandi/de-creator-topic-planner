@@ -3,7 +3,7 @@ name: wf-creator-topic-hot-aggregate
 description: >-
   爆款选题策划师 的「热点聚合扫描」工作流：抓取多平台热榜→竞品账号更新→按赛道过滤→候选池。触发方式：定时（每日 07:30）。
   当用户要完成「热点聚合扫描」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
